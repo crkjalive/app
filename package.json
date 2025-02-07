@@ -1,0 +1,22 @@
+{
+  "name": "app2025",
+  "version": "1.0.0",
+  "description": "app estructura conexion y base de datos",
+  "main": "app.js",
+  "scripts": {
+    "server": "node --watch src/app.js"
+  },
+  "author": "CRKJ",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql-connect": "^1.0.1",
+    "path": "^0.12.7",
+    "pm2": "^5.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
