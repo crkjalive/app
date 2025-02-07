@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(express.urlencoded({ extended: false }))
 
 
-app.get('/', (req, res) => res.send('Hello World'))
+app.get('/', (req, res) => res.render('index', { app: 'Hello World App JSON'}))
 
 app.get('/app', (req, res) => {
     
@@ -21,8 +21,8 @@ app.get('/app', (req, res) => {
     connection.query(sql, (err, result) => {
         if (err) { console.log('Error en la consulta: ' + err )}
         else {
-            // console.log(result)
             res.send(result)
+            // console.log(result)
         }
     } )
 })
